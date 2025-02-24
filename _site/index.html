@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head section -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Hitesh Chopra - Senior Android Developer | Performance Specialist</title>
+    <meta name="title" content="Hitesh Chopra - Senior Android Developer | Performance Specialist">
+    <meta name="description"
+        content="Senior Android Developer specializing in app performance optimization, Jetpack Compose, and modern architecture. View my projects, publications, and skills.">
+    <meta name="keywords"
+        content="Android Developer, Kotlin, Java, App Performance, Jetpack Compose, Clean Architecture, MVVM, MVI, Mobile Development, InMobi, ShareChat">
+    <meta name="author" content="Hitesh Chopra">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hiteshchopra11.github.io/">
+    <meta property="og:title" content="Hitesh Chopra - Senior Android Developer | Performance Specialist">
+    <meta property="og:description"
+        content="Senior Android Developer specializing in app performance optimization, Jetpack Compose, and modern architecture. View my projects, publications, and skills.">
+    <meta property="og:image" content="https://hiteshchopra11.github.io/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hiteshchopra11.github.io/">
+    <meta property="twitter:title" content="Hitesh Chopra - Senior Android Developer | Performance Specialist">
+    <meta property="twitter:description"
+        content="Senior Android Developer specializing in app performance optimization, Jetpack Compose, and modern architecture. View my projects, publications, and skills.">
+    <meta property="twitter:image" content="https://hiteshchopra11.github.io/assets/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hiteshchopra11.github.io/">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-500 text-lg">Hitesh Chopra</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="py-4 px-2 text-blue-600 font-semibold nav-link">Home</a>
+                    <a href="#experience"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Experience</a>
+                    <a href="#projects"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Projects</a>
+                    <a href="#app"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">My App</a>
+                    <a href="#publications"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Publications</a>
+                    <a href="#skills"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Skills</a>
+                    <a href="#awards"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Achievements</a>
+                    <a href="#contact"
+                        class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300 nav-link">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-button" class="outline-none">
+                        <i class="fas fa-bars text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-100">Experience</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100">Projects</a>
+            <a href="#app" class="block py-2 px-4 text-sm hover:bg-gray-100">My App</a>
+            <a href="#publications" class="block py-2 px-4 text-sm hover:bg-gray-100">Publications</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-100">Skills</a>
+            <a href="#awards" class="block py-2 px-4 text-sm hover:bg-gray-100">Achievements</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="max-w-6xl mx-auto px-4 py-16">
+                <h1 class="text-4xl font-bold mb-4">Hitesh Chopra</h1>
+                <h2 class="text-2xl mb-4">Senior Android Developer</h2>
+                <p class="text-xl mb-8">Building high-performance Android applications with modern architecture</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://github.com/hiteshchopra11" target="_blank"
+                        class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition duration-300 custom-button">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank"
+                        class="border border-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 custom-button">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
+                    <a href="https://medium.com/@hiteshchopra11" target="_blank"
+                        class="border border-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 custom-button">
+                        <i class="fab fa-medium mr-2"></i>Medium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">About Me</h2>
+                <p class="text-gray-600">My journey as a developer</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="md:flex items-center space-y-8 md:space-y-0">
+                    <!-- Profile Image -->
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-blue-600 shadow-lg">
+                            <img src="/JS/assets/images/hitesh_profile_image.jpeg" alt="Hitesh Chopra - Android Developer"
+                                width="256" height="256" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Bio Content -->
+                    <div class="md:w-2/3 md:pl-8">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Hi, I'm Hitesh!</h3>
+                        <div class="text-gray-700 space-y-4">
+                            <p>
+                                I'm Hitesh Chopra, a passionate Software Engineer specializing in Android development
+                                with over 4 years of professional experience. My journey in coding began in 8th grade
+                                when Java was introduced as part of the ICSE curriculum. What started as a subject
+                                quickly became a fascination as I discovered the logic and creativity behind coding.
+                            </p>
+                            <p>
+                                I took an unconventional path, choosing commerce in higher secondary, then pursuing a
+                                BCA without a master's degree, and still made my way into the tech world as a software
+                                engineer. Since then, I've developed apps across weather, healthcare, and social media
+                                domains, impacting millions of users.
+                            </p>
+                            <p>
+                                I actively contribute to the Android community through blogs and publications. In my
+                                free time, I enjoy playing cricket, badminton, watching documentaries, and reading
+                                books.
+                            </p>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#experience"
+                                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                                <i class="fas fa-briefcase mr-2"></i>View Experience
+                            </a>
+                            <a href="#projects"
+                                class="border border-blue-600 text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition duration-300">
+                                <i class="fas fa-code mr-2"></i>See Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Professional Experience</h2>
+                <p class="text-gray-600">My journey as an Android developer</p>
+            </div>
+
+            <div class="timeline">
+                <!-- InMobi Experience -->
+                <div class="timeline-item fade-in">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <div class="flex flex-wrap justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-600">Software Development Engineer - II (Android)
+                                </h3>
+                                <h4 class="text-lg font-semibold">
+                                    <a href="https://www.inmobi.com/" target="_blank"
+                                        class="hover:text-blue-700">InMobi</a>
+                                </h4>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-600">October 2023 - Present</span>
+                                <p class="text-gray-500">Bangalore, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Enhanced user experience and functionality of the <strong><a
+                                        href="https://play.google.com/store/apps/details?id=com.handmark.expressweather"
+                                        target="_blank" class="text-blue-600 hover:underline">1Weather app</a></strong>
+                                (100M+ downloads worldwide), improving performance and usability for millions of users.
+                            </li>
+                            <li>Optimized first frame rendering to achieve a <strong>57% reduction in warm
+                                    start</strong> and a <strong>43% reduction in cold start</strong> time, dramatically
+                                boosting app performance.</li>
+                            <li>Integrated <strong>Jetpack Compose</strong> into an XML-only codebase for seamless
+                                interoperability and developed an end-to-end feature in it.</li>
+                            <li>Responsible for managing tech debt in the Android app, conducting hygiene checks every
+                                3-6 months to upgrade libraries, ensure compliance, and adapt to new OS versions.</li>
+                            <li>Integrated baseline and startup profiles, reducing app startup time by 5%.</li>
+                            <li>Proposed and implemented <strong>Firebase Performance Monitoring</strong> with multiple
+                                custom traces to enhance app observability and improve performance tracking.</li>
+                            <li>Migrated an end-to-end app from <strong>Android 13 to Android 14</strong>, and from
+                                <strong>Android 14 to Android 15</strong>, ensuring compatibility and leveraging new
+                                platform features.
+                            </li>
+                            <li>Developed a custom solution for dynamically adding/removing ads in binge-view content
+                                using the <strong>Paging3 library</strong>, extending its functionality beyond standard
+                                support.</li>
+                            <li>Serving as the metric owner for app performance monitoring, overseeing performance
+                                metrics for the app.</li>
+                            <li>Revamped the whole home page of the app as per the latest design, integrating collapsing
+                                toolbar in the app.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ShareChat Experience -->
+                <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <div class="flex flex-wrap justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-600">Software Development Engineer (Android)</h3>
+                                <h4 class="text-lg font-semibold">
+                                    <a href="https://sharechat.com/" target="_blank"
+                                        class="hover:text-blue-700">ShareChat</a>
+                                </h4>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-600">February 2022 - September 2023</span>
+                                <p class="text-gray-500">Bangalore, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Contributed to the <strong><a href="https://play.google.com/store/search?q=moj&c=apps"
+                                        target="_blank" class="text-blue-600 hover:underline">Moj app</a></strong>
+                                (100M+ downloads) livestream team serving over <strong>160 million monthly active
+                                    users</strong>.</li>
+                            <li>Followed Agile methodology and worked extensively on <strong>Kotlin</strong> and
+                                <strong>Jetpack Compose</strong> with Clean Architecture and MVI architecture.
+                            </li>
+                            <li>Independently implemented pivotal features for the <strong>Moj Live Gamification
+                                    Pod</strong>, leading to increased user engagement.</li>
+                            <li>Integrated the <strong>Co-host preview feature</strong> for an enhanced live experience
+                                for creators.</li>
+                            <li>Developed a versatile <strong>generic animation framework</strong>, reducing substantial
+                                development time in subsequent releases.</li>
+                            <li>Elevated testing coverage from <strong>10% to 90%</strong> by writing unit tests and UI
+                                tests, ensuring code reliability.</li>
+                            <li>Facilitated Android interviews, provided mentorship, and contributed to the onboarding
+                                process.</li>
+                            <li>Executed migration from <strong>MQTT to SSE</strong>, resulting in substantial cost
+                                reductions for a live feature.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mutual Mobile Experience -->
+                <div class="timeline-item fade-in" style="animation-delay: 0.4s;">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <div class="flex flex-wrap justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-600">Associate Software Engineer (Android)</h3>
+                                <h4 class="text-lg font-semibold">
+                                    <a href="https://mutualmobile.com/" target="_blank"
+                                        class="hover:text-blue-700">Mutual Mobile</a>
+                                </h4>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-600">June 2021 - January 2022</span>
+                                <p class="text-gray-500">Hyderabad, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Developed application architecture using the <strong>MVVM pattern</strong> with Clean
+                                Architecture principles.</li>
+                            <li>Created a comprehensive travel, health, and wellness Android app from scratch.</li>
+                            <li>Integrated a subscription flow using <strong>Stripe's Android SDK</strong> and APIs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mutual Mobile Internship -->
+                <div class="timeline-item fade-in" style="animation-delay: 0.6s;">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex flex-wrap justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-600">Android Intern</h3>
+                                <h4 class="text-lg font-semibold">
+                                    <a href="https://mutualmobile.com/" target="_blank"
+                                        class="hover:text-blue-700">Mutual Mobile</a>
+                                </h4>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-gray-600">March 2021 - May 2021</span>
+                                <p class="text-gray-500">Hyderabad, India</p>
+                            </div>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Received training in Android and studied about <strong>Clean Architecture</strong>,
+                                Dagger2, Flows, RxJava, Coroutines, Navigation Components, Unit Testing and implemented
+                                all in personal project.</li>
+                            <li>Developed <strong>Instagram Clone</strong> under mentorship of seniors.</li>
+                            <li>Got hands-on experience with <strong>Agile Methodologies</strong>, Jira, BitBucket, GIT
+                                and made a project following Agile, under the guidance of mentors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section id="app" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">My Android App</h2>
+                <p class="text-gray-600">Published on Google Play Store</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <!-- App Screenshot - Using the feature image -->
+                    <div
+                        class="md:w-2/5 flex items-center justify-center p-6 bg-gradient-to-br from-blue-50 to-indigo-100">
+                        <img src="./JS/assets/images/easy-unit-converter-feature.png"
+                            alt="Easy Unit Converter app showing energy conversion interface" width="500" height="800"
+                            loading="lazy" class="w-full max-w-md rounded-lg shadow-lg">
+                    </div>
+
+                    <!-- App Description -->
+                    <div class="md:w-3/5 p-8">
+                        <div class="flex items-center mb-4">
+                            <h3 class="text-2xl font-bold text-gray-800">Easy Unit Converter</h3>
+                            <div class="ml-4 flex">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 mb-6">
+                            Transform complex measurements into simple conversions with Easy Unit Converter! Whether
+                            you're studying, cooking, traveling, or working on professional projects, this intuitive app
+                            makes your life easier.
+                        </p>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-3 text-gray-800">Perfect For</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Students</span>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Cooking</span>
+                                <span
+                                    class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Travelers</span>
+                                <span
+                                    class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Professionals</span>
+                                <span
+                                    class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Fitness</span>
+                                <span
+                                    class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Business</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-3 text-gray-800">Key Features</h4>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Simple,
+                                    clean interface</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Instant,
+                                    accurate conversions</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> No
+                                    unnecessary permissions</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Regular
+                                    updates</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> All major
+                                    measurement categories</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>
+                                    Professional-grade accuracy</li>
+                            </ul>
+                        </div>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.easyutilapps.convertor.android"
+                            target="_blank"
+                            class="inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-google-play mr-2"></i> Download on Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Featured Projects</h2>
+                <p class="text-gray-600">Showcasing my technical expertise</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Ktor APIs -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">Ktor APIs</h3>
+                    <p class="text-gray-600 mb-4">Designed and developed the Ktor-API project to showcase advanced
+                        features of the Kotlin Ktor framework for building robust REST APIs.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Ktor</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">REST APIs</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/ktor-api" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- ML Kit Face Detector -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">ML Kit Face Detector</h3>
+                    <p class="text-gray-600 mb-4">Android application demonstrating face detection capabilities using ML
+                        Kit.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">ML Kit</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">CameraX</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/MLKitFaceDetector" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- MarketO -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">MarketO</h3>
+                    <p class="text-gray-600 mb-4">E-commerce application with modern Android architecture components and
+                        clean UI.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">MVVM</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Coroutines</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/MarketO" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- GithubKT -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">GithubKT</h3>
+                    <p class="text-gray-600 mb-4">A pure Kotlin application utilizing Jetpack libraries and Compose for
+                        UI, Ktor-Client for networking, and Coil for image loading.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Jetpack Compose</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Ktor-Client</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/GithubKT" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Cookpad Clone -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">Cookpad Clone</h3>
+                    <p class="text-gray-600 mb-4">Android clone of the Cookpad app, made in Kotlin following the MVVM
+                        and Clean Architecture.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">MVVM</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Clean Architecture</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/CookpadClone" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Pet Adoption -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md" data-category="personal">
+                    <h3 class="text-xl font-bold mb-2 text-blue-600">Pet Adoption</h3>
+                    <p class="text-gray-600 mb-4">Android app developed for the Google Android Dev Challenge, showcasing
+                        pet adoption with a modern UI.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Jetpack Compose</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Material Design</span>
+                    </div>
+                    <a href="https://github.com/hiteshchopra11/Pet-Adoption" target="_blank"
+                        class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Technical Writing</h2>
+                <p class="text-gray-600">Sharing knowledge with the Android community</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">Ktor-Client Decoded!! What, Why, How and When?</h3>
+                    <p class="text-gray-600 mb-4">In-depth exploration of Ktor client implementation for Android. This
+                        article covers the fundamentals, advanced usage patterns, and when to choose Ktor over other
+                        networking libraries.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-sm">ProAndroidDev</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-sm">Droidcon</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500"><i class="far fa-calendar-alt mr-2"></i>January 2022</span>
+                        <div class="space-x-2">
+                            <a href="https://proandroiddev.com/ktor-client-decoded-what-why-how-and-when-c6dca7559390"
+                                target="_blank" class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                                ProAndroidDev <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                            <a href="https://www.droidcon.com/2022/02/01/ktor-client-decoded-what-why-how-and-when/"
+                                target="_blank" class="text-indigo-600 hover:text-indigo-800 inline-flex items-center">
+                                Droidcon <i class="fas fa-external-link-alt ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">Cleaner Previews with PreviewParameters</h3>
+                    <p class="text-gray-600 mb-4">Best practices for implementing preview parameters in Jetpack Compose.
+                        Learn how to create more maintainable and realistic previews for your composable functions.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-sm">Droidcon</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500"><i class="far fa-calendar-alt mr-2"></i>March 2022</span>
+                        <a href="https://www.droidcon.com/2022/03/11/cleaner-previews-in-compose-with-previewparameter/"
+                            target="_blank" class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                            Read Article <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">ViewModel Magic Revealed</h3>
+                    <p class="text-gray-600 mb-4">Deep dive into how ViewModel works under the hood. Understanding the
+                        lifecycle and internals of this critical Android architecture component.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-sm">ProAndroidDev</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500"><i class="far fa-calendar-alt mr-2"></i>May 2022</span>
+                        <a href="https://proandroiddev.com/viewmodel-magic-revealed-330476b5ab27" target="_blank"
+                            class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                            Read Article <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">Unidirectional Server-Client Communication using
+                        SSE in Android</h3>
+                    <p class="text-gray-600 mb-4">Implementing Server-Sent Events for efficient one-way communication in
+                        Android apps. A practical guide to real-time updates without websockets.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-sm">ProAndroidDev</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500"><i class="far fa-calendar-alt mr-2"></i>March 2023</span>
+                        <a href="https://proandroiddev.com/unidirectional-server-client-communication-using-sse-in-android-79b825aa0670"
+                            target="_blank" class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                            Read Article <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">Developing REST APIs with Ktor</h3>
+                    <p class="text-gray-600 mb-4">A comprehensive guide to building RESTful APIs using the Ktor
+                        framework, covering routing, serialization, authentication, and more.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-sm">Droidcon</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500"><i class="far fa-calendar-alt mr-2"></i>January 2022</span>
+                        <a href="https://www.droidcon.com/2022/01/17/developing-rest-apis-with-ktor/" target="_blank"
+                            class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                            Read Article <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Technical Skills</h2>
+                <p class="text-gray-600">My technology expertise</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="space-y-8">
+                    <!-- Android Development Skills -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">Android Development</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Android Development, Kotlin, Java, CameraX, ML Kit, RecyclerView Optimization, Custom Views,
+                            ViewStub, AsyncLayoutInflator, JarViewStub, JarAsyncLayoutInflator, Lazy Layout Inflation,
+                            Trace Logging, Perfetto (Performance Debugging), Cold Start Optimization, Warm Start
+                            Optimization, Hot Start Optimization, TTID (Time To Initial Display) Optimization, Jetpack
+                            Compose, MVVM, MVI, Clean Architecture, Coroutines, Flows, Channels, Room, WorkManager,
+                            Dagger2, Hilt, Paging3, MockK, Ktor-client, JUnit, Turbine, Baseline Profiles,
+                            Macrobenchmarks, App Startup Library
+                        </p>
+                    </div>
+
+                    <!-- Languages and Tools -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-600">Languages and Tools</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Kotlin, Java, XML, C++, JavaScript, HTML, CSS, Flutter, Node JS, Ktor, Android Studio,
+                            VSCode, Jira, BitBucket, Git, IntelliJ, Postman, Pluto, Charles
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Achievements</h2>
+                <p class="text-gray-600">Recognition for technical excellence</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-6">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-award text-yellow-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">AndroidDevChallenge Award by Google</h3>
+                        <p class="text-gray-600">Recognized for outstanding contributions in Android development</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-users text-blue-500 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold">Publisher at ProAndroidDev</h3>
+                        <p class="text-gray-600">Contributing author with 20,000+ views and 9,000+ reads across 5
+                            published articles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Get In Touch</h2>
+                <p class="text-gray-600">Let's discuss your project or potential opportunities</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="max-w-3xl mx-auto">
+                    <h3 class="text-xl font-bold mb-6 text-blue-600">Contact Information</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3 w-5"></i>
+                            <a href="mailto:hiteshchopra11@gmail.com"
+                                class="text-gray-700 hover:text-blue-600">hiteshchopra11@gmail.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 w-5"></i>
+                            <span class="text-gray-700">Bangalore, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-linkedin text-blue-500 mr-3 w-5"></i>
+                            <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank"
+                                class="text-gray-700 hover:text-blue-600">linkedin.com/in/hiteshchopra11</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-twitter text-blue-500 mr-3 w-5"></i>
+                            <a href="https://x.com/hitesh_chopra11" target="_blank"
+                                class="text-gray-700 hover:text-blue-600">x.com/hitesh_chopra11</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-github text-blue-500 mr-3 w-5"></i>
+                            <a href="https://github.com/hiteshchopra11" target="_blank"
+                                class="text-gray-700 hover:text-blue-600">github.com/hiteshchopra11</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fab fa-medium text-blue-500 mr-3 w-5"></i>
+                            <a href="https://medium.com/@hiteshchopra11" target="_blank"
+                                class="text-gray-700 hover:text-blue-600">medium.com/@hiteshchopra11</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 text-center">
+                        <p class="text-gray-600 mb-6">Connect with me on social media or send me an email. I'd love to
+                            hear from you!</p>
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://github.com/hiteshchopra11" target="_blank"
+                                class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition-colors">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank"
+                                class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://x.com/hitesh_chopra11" target="_blank"
+                                class="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://medium.com/@hiteshchopra11" target="_blank"
+                                class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition-colors">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p>© 2025 Hitesh Chopra. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/hiteshchopra11" target="_blank"
+                        class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank"
+                        class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://medium.com/@hiteshchopra11" target="_blank"
+                        class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-medium fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <!-- SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hitesh Chopra",
+      "jobTitle": "Senior Android Developer",
+      "url": "https://hiteshchopra11.github.io/",
+      "sameAs": [
+        "https://github.com/hiteshchopra11",
+        "https://www.linkedin.com/in/hiteshchopra11",
+        "https://medium.com/@hiteshchopra11",
+        "https://x.com/hitesh_chopra11"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "InMobi",
+        "url": "https://www.inmobi.com/"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "ShareChat",
+          "url": "https://sharechat.com/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Mutual Mobile",
+          "url": "https://mutualmobile.com/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Panjab University",
+          "url": "https://puchd.ac.in/"
+        }
+      ],
+      "knowsAbout": [
+        "Android Development",
+        "Kotlin",
+        "Java",
+        "App Performance Optimization",
+        "Jetpack Compose",
+        "Clean Architecture",
+        "MVVM",
+        "MVI"
+      ]
+    }
+    </script>
+
+    <!-- Add this for your app -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Easy Unit Converter",
+      "operatingSystem": "Android",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "100"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.easyutilapps.convertor.android"
+    }
+    </script>
+</body>
+
+</html>
