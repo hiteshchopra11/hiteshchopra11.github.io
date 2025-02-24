@@ -1,57 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Notes app</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hitesh Chopra - Senior Android Developer Portfolio">
+    <title>Hitesh Chopra - Android Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Magic Notes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0">
-                <input id="searchTxt" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <span class="font-semibold text-gray-500 text-lg">Hitesh Chopra</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="py-4 px-2 text-blue-600 font-semibold">Home</a>
+                    <a href="#projects" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Projects</a>
+                    <a href="#publications" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Publications</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-button" class="outline-none">
+                        <i class="fas fa-bars text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100">Projects</a>
+            <a href="#publications" class="block py-2 px-4 text-sm hover:bg-gray-100">Publications</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
         </div>
     </nav>
 
-    <div class="container my-3">
-        <h1>Welcome to magic Notes</h1>
-        <div class="card">
-            <div class="card-body">
-
-                <h5 class="card-title">Add a Note</h5>
-                <div class="form-group">
-                    <textarea class="form-control" id="addTitle" rows="1" placeholder="Title" style="resize:none"></textarea>
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="max-w-6xl mx-auto px-4 py-16">
+                <h1 class="text-4xl font-bold mb-4">Senior Android Developer</h1>
+                <p class="text-xl mb-8">Building high-performance Android applications with modern architecture</p>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/hiteshchopra11" target="_blank" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition duration-300">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank" class="border border-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Note"></textarea>
-                </div>
-                <button href="#" class="btn btn-primary" id="addbtn">Add Note</button>
             </div>
         </div>
-        <h1>Your Notes</h1>
-        <hr>
-        <div id="notes" class="row container-fluid">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 1Weather -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">1Weather App Optimization</h3>
+                    <p class="text-gray-600 mb-4">Led performance improvements achieving 57% reduction in warm start and 43% reduction in cold start time.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Jetpack Compose</span>
+                    </div>
+                </div>
+                <!-- Moj Live -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Moj Live Streaming</h3>
+                    <p class="text-gray-600 mb-4">Enhanced livestream experience for 160M+ monthly active users with features like co-host preview and gamification.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">MVI</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Clean Architecture</span>
+                    </div>
+                </div>
+                <!-- Instagram Clone -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Instagram Clone</h3>
+                    <p class="text-gray-600 mb-4">An Instagram Clone app based on Clean architecture designed in Kotlin.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Clean Architecture</span>
+                    </div>
+                </div>
+                <!-- GithubKT -->
+                <div class="project-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">GithubKT</h3>
+                    <p class="text-gray-600 mb-4">A pure Kotlin application utilizing Jetpack libraries and Compose for UI.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Kotlin</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Jetpack Compose</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Technical Writing</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Ktor-Client Decoded</h3>
+                    <p class="text-gray-600 mb-4">In-depth exploration of Ktor client implementation for Android.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        Read Article <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Clean Previews with PreviewParameters</h3>
+                    <p class="text-gray-600 mb-4">Best practices for implementing preview parameters in Jetpack Compose.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                        Read Article <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p>© 2024 Hitesh Chopra. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/hiteshchopra11" target="_blank" class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hiteshchopra11" target="_blank" class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://medium.com/@hiteshchopra11" target="_blank" class="hover:text-blue-400 transition duration-300">
+                        <i class="fab fa-medium fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
-<script src="JS/script.js"></script>
-
 </html>
