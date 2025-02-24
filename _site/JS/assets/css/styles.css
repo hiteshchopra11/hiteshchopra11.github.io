@@ -1,0 +1,274 @@
+/* Custom styles to complement Tailwind */
+
+/* Base styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Experience timeline styles */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #e5e7eb;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -34px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2563eb;
+    border: 2px solid white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    z-index: 1;
+}
+
+.timeline-item:hover::before {
+    background: #1d4ed8;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+/* Project card hover effects */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill tags animation */
+.skill-badge {
+    background: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+}
+
+.skill-badge:hover {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation link hover effect */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Form input focus styles */
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c5c5c5;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
+
+/* Loading animation */
+.loading {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Button styles */
+.custom-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.custom-button:hover::after {
+    left: 100%;
+}
+
+/* Section animations */
+.section-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Highlight text */
+.highlight {
+    background: linear-gradient(120deg, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%);
+    border-radius: 2px;
+    padding: 0.1em 0.2em;
+    font-weight: 500;
+}
+
+/* Enhanced lists in timelines */
+.timeline-item ul li {
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.timeline-item ul li:hover {
+    transform: translateX(5px);
+}
+
+/* Publication card hover effects */
+#publications .bg-white {
+    transition: all 0.3s ease;
+}
+
+#publications .bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#publications .bg-white:hover h3 {
+    color: #1d4ed8;
+}
+
+/* Media queries for better responsive design */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -24px;
+    }
+
+    .timeline-item {
+        padding-bottom: 20px;
+    }
+}
+
+/* Print styles for resume printing */
+@media print {
+
+    nav,
+    footer,
+    #contact,
+    button {
+        display: none !important;
+    }
+
+    body,
+    html {
+        background: white !important;
+    }
+
+    .max-w-6xl {
+        max-width: 100% !important;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}

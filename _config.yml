@@ -1,0 +1,19 @@
+title: Hitesh Chopra - Android Developer
+description: Senior Android Developer specializing in app performance optimization, Jetpack Compose, and modern architecture
+url: https://hiteshchopra11.github.io
+author: Hitesh Chopra
+twitter:
+  username: hitesh_chopra11
+  card: summary_large_image
+logo: /assets/images/hitesh-profile.jpg
+social:
+  name: Hitesh Chopra
+  links:
+    - https://x.com/hitesh_chopra11
+    - https://www.linkedin.com/in/hiteshchopra11
+    - https://github.com/hiteshchopra11
+    - https://medium.com/@hiteshchopra11
+lang: en_US
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
